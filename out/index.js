@@ -1,7 +1,13 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var User_1 = require("./User");
+var Task_1 = require("./Task");
 var user = new User_1.User();
 user.firstName = 'Ripon';
 user.lastName = 'Ghosh';
 console.log(user.fullName());
+var task = new Task_1.Task;
+task.name = 'Typescript';
+task.description = 'Simple Project';
+user.setTask(task);
+console.log(user.getTasks());
